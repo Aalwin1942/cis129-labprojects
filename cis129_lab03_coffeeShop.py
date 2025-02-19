@@ -28,5 +28,5 @@ bagel_text = 'Bagels at $6 each: $'
 tea_text = 'Tea at $3 each: $'
 tax_text = '6% tax: $'
 #finalize display text and receipt
-print( intro, coffee_q, '\n', coffee_amount, '\n' , muffin_q , '\n', muffin_amount, '\n', bagel_q, '\n', bagel_amount, '\n', middle, coffee_amount, coffee_text, coffee_total, '.00\n', muffin_amount, muffin_text, muffin_total, '.00\n', bagel_amount, bagel_text, bagel_total, '.00\n', tea_amount, tea_text, tea_total, '.00\n', tax_text, tax, '\n----------\nTotal: $', total_price, '\n******************************')
+print( intro, coffee_q, '\n', coffee_amount, '\n' , muffin_q , '\n', muffin_amount, '\n', bagel_q, '\n', bagel_amount, '\n', tea_q, '\n', tea_amount, '\n', middle, coffee_amount, coffee_text, coffee_total, '.00\n', muffin_amount, muffin_text, muffin_total, '.00\n', bagel_amount, bagel_text, bagel_total, '.00\n', tea_amount, tea_text, tea_total, '.00\n', tax_text, tax, '\n----------\nTotal: $', total_price, '\n******************************')
 #updates adding bagel and tea
