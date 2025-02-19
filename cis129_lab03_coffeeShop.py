@@ -1,12 +1,17 @@
+#text sortcuts
+coffee_q = 'Number of coffees bought?'
+muffin_q = 'Number of muffins bought?'
+bagel_q = 'Number of bagels bought?'
+tea_q = 'Number of teas bought?'
 #assign variables for coffee and muffins
 coffee_price = 5
 muffin_price = 4
 bagel_price = 6
 tea_price = 3
-coffee_amount = int(input('Number of coffees bought?'))
-muffin_amount = int(input('Number of muffins bought?'))
-bagel_amount = int(input('Number of bagels bougt?'))
-tea_amount = int(input('Number of teas bought?'))
+coffee_amount = int(input(coffee_q))
+muffin_amount = int(input(muffin_q))
+bagel_amount = int(input(bagel_q))
+tea_amount = int(input(tea_q))
 coffee_total = coffee_price * coffee_amount
 muffin_total = muffin_price * muffin_amount
 bagel_total = bagel_price * bagel_amount
@@ -20,8 +25,8 @@ middle = '\n******************************\n\n******************************\nMy
 coffee_text = 'Coffee at $5 each: $'
 muffin_text = 'Muffins at $4 each: $'
 bagel_text = 'Bagels at $6 each: $'
-tea_text = 'Tea at $3 eac: $'
+tea_text = 'Tea at $3 each: $'
 tax_text = '6% tax: $'
 #finalize display text and receipt
-print( intro, int(input('Number of coffees bought?')), int(input('Number of muffins bought?')), int(input('Number of bagels bougt?')), int(input('Number of teas bought?')), middle, coffee_amount, coffee_text, '.00\n', muffin_amount, muffin_text, '.00\n', bagel_amount, bagel_text, '.00\n', tea_amount, tea_text, '.00\n', tax_text, tax, '\n----------\nTotal: $', total_price, '\n******************************')
+print( intro, coffee_q, '\n', coffee_amount, '\n' , muffin_q , '\n', muffin_amount, '\n', bagel_q, '\n', bagel_amount, '\n', middle, coffee_amount, coffee_text, coffee_total, '.00\n', muffin_amount, muffin_text, muffin_total, '.00\n', bagel_amount, bagel_text, bagel_total, '.00\n', tea_amount, tea_text, tea_total, '.00\n', tax_text, tax, '\n----------\nTotal: $', total_price, '\n******************************')
 #updates adding bagel and tea
