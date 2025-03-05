@@ -29,13 +29,19 @@ else:
   print('83 is not out numbers')
 
 
-# include code to get the monthly Sales
-# include code to get the Increase in Sales
-# include code to Calculate the Store Bonus
-# include code to Calculate the Employee Bonus
-# include code to print out all the results
-
-monthlySales = float(input('Enter monthly sales amount:'))
+# Module 4 Lab-4
+#Amber
+#25 Feb 2025
+#Program provides store bonus based off of monthly sales and employee bonus based on monthly sales percentage increase
+#declare local variables
+monthlySales = 0 # monthly sales amount
+storeAmount = 0 # store bonus amount
+empAmount = 0 # employee bonus amount
+salesIncrease = 0 # percent of sales increase
+prompt = 'Enter monthly sales amount:' # prompt will be a string literal
+# this code gets the monthly sales
+monthlySales = float(input(prompt))
+# this code determines the store bonus
 if monthlySales >= 110000:
   storeAmount = 6000
 elif monthlySales >= 100000:
@@ -46,7 +52,9 @@ elif monthlySales >= 80000:
   storeAmount = 3000
 else:
   storeAmount = 0
+# this code gets the percent of increase in sales
 salesIncrease = float(input('Enter sales increase percentage:'))
+# this code determines the employee bonus
 salesIncrease = salesIncrease / 100
 if salesIncrease >= 0.05:
   empAmount = 75
@@ -56,6 +64,7 @@ elif salesIncrease >= 0.03:
   empAmount = 40
 else:
   empAmount = 0
+# this code prints the bonus information
 print('The store bonus amount is $', storeAmount)
 print('The employee bonus amount is $', empAmount)
 if (storeAmount == 6000) and (empAmount == 75):
