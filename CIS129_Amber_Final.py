@@ -26,8 +26,8 @@ cost = 0
 def IndividualCalc():
     item = float(input('Enter cost of item (excluding dollar sign): '))
     amount = int(input('Enter unit amounts: '))
-    cost = item * amount * sales_tax
-    print(f'The price after tax is: {cost}. Unit price is {item * sales_tax}')
+    cost = ((item * (sales_tax / 100) ) + item) * amount
+    print(f'The price after tax is: {cost}. Unit price is {item + (item * (sales_tax / 100))}')
     return cost
 cart = 0
 def Cart():
